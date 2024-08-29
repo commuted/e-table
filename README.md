@@ -15,6 +15,7 @@ E192, E96, E48 are precision 3, while E24, E12, E6, and E3 are precision 2. Read
                 value = value * 10**(decade-1)
                 sig_digit = round(value, -int(floor(log10(abs(value)))) + (precision - 1))        
                 resistors.append(sig_digit)
+            return resistors
         '''
 The mystery is solved... E24, E12, E6 and E3 are not mathematically derived.
 
